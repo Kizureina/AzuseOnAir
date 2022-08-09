@@ -3,7 +3,7 @@ body{
     background-image:url("../img/seren_bg.png");
     background-repeat:no-repeat;
     background-position:left;
-    background-size: 100% auto;
+    background-size:cover;
 }
 *{
     box-sizing:border-box
