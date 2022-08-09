@@ -15,9 +15,11 @@
 
 <body>
     <div id="app">
-        <img src="./img/東雪蓮Q版1.png" style = "width:100px;height: 100px;z-index: 2;" @click="href">
+        <img src="./img/東雪蓮Q版1.png" style = "width:100px;height: 100px;z-index: 2;padding: 10px;" @click="href('https://space.bilibili.com/1437582453')">
+        <img src="./img/right_icon-removebg-preview.png" style = "width:80px;height: 80px;z-index: 2;padding: 10px;float: right;" @click="href('https://twitter.com/AzumaSeren')">
         <div class="wrapper">
             <div class="player">
+                <div class="twitter" @click="href"></div>
                 <div class="player__top">
                     <div class="player-cover">
                         <transition-group :name="transitionName">
@@ -133,8 +135,8 @@
         };
     },
     methods: {
-        href() {
-            window.open("https://space.bilibili.com/1437582453","_blank")
+        href(url) {
+            window.open(url,"_blank")
         },
         changeLoop() {
             if (!this.isLoop) {
